@@ -1,0 +1,1 @@
+qemu-system-mips -M malta -initrd images/rootfs.cpio -kernel images/vmlinux -nographic -no-reboot -append "console=ttyS0,38400" -net nic,vlan=1,macaddr=00:aa:00:60:00:01,model=e1000 -net tap,vlan=1,ifname=tap2,script=no -net nic,vlan=2,macaddr=00:aa:00:60:00:02,model=e1000
