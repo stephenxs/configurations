@@ -1,0 +1,8 @@
+BR2_armeb=y
+BR2_cortex_a9=y
+BR2_DEFCONFIG="$(CONFIG_DIR)/defconfig"
+BR2_UCLIBC_CONFIG="/home/sunxi/projects/arm-vexpress/uClibc-0.9.33.config"
+BR2_LINUX_KERNEL=y
+BR2_LINUX_KERNEL_USE_CUSTOM_CONFIG=y
+BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="/home/sunxi/projects/arm-vexpress/qemu_arm_vexpress_defconfig"
+BR2_PACKAGE_BUSYBOX_CONFIG="/home/sunxi/projects/arm-vexpress/busybox-1.22.x.config"
