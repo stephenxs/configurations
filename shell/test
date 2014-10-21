@@ -1,0 +1,6 @@
+more filter > /sys/kernel/debug/tracing/set_ftrace_filter
+echo 1 > /sys/kernel/debug/tracing/tracing_on
+./preemption-test q T40960 l D10000 d Pfi "1 10"
+echo 0 > /sys/kernel/debug/tracing/tracing_on
+more /sys/kernel/debug/tracing/trace > trace
+

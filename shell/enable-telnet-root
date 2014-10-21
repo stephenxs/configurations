@@ -1,0 +1,5 @@
+echo pts/0 >> /etc/securetty
+echo pts/1 >> /etc/securetty
+echo pts/2 >> /etc/securetty
+echo pts/3 >> /etc/securetty
+telnetd

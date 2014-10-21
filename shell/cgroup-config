@@ -1,0 +1,12 @@
+mount -t tmpfs cgroup_root /sys/fs/cgroup
+mkdir /sys/fs/cgroup/cpu
+mount -t cgroup -ocpu cpu /sys/fs/cgroup/cpu
+mkdir /sys/fs/cgroup/cpu/t1
+mkdir /sys/fs/cgroup/cpu/t2
+mkdir /sys/fs/cgroup/cpu/t3
+mkdir /sys/fs/cgroup/cpu/t4
+echo 100000 > /sys/fs/cgroup/cpu/t1/cpu.rt_runtime_us
+echo 100000 > /sys/fs/cgroup/cpu/t2/cpu.rt_runtime_us
+echo 100000 > /sys/fs/cgroup/cpu/t3/cpu.rt_runtime_us
+echo 100000 > /sys/fs/cgroup/cpu/t4/cpu.rt_runtime_us
+
